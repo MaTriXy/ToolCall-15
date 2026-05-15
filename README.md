@@ -1,10 +1,18 @@
 # ToolCall-15
 
-`main` now tracks the maintained Bench Pack version of ToolCall-15 for BenchLocal.
+ToolCall-15 is an official [BenchLocal](https://github.com/stevibe/BenchLocal) Bench Pack for evaluating deterministic tool use, tool selection, parameter precision, multi-step tool chains, restraint, and recovery from tool errors.
 
-If you need the older standalone web app implementation, use the [`legacy/web-app`](https://github.com/stevibe/ToolCall-15/tree/legacy/web-app) branch. That branch is preserved for compatibility, but BenchLocal is now the recommended way to run ToolCall-15 because it provides a unified experience for providers, models, workspaces, histories, and the broader Bench Pack suite.
+A Bench Pack is an installable benchmark package that runs inside the [BenchLocal desktop app](https://github.com/stevibe/BenchLocal). BenchLocal provides the shared app experience for provider setup, model selection, sampling controls, run histories, and side-by-side comparison across benchmark packs.
 
-ToolCall-15 is an official BenchLocal Bench Pack for deterministic tool use and tool-call loop scoring. The repo keeps one benchmark core and exposes it through a BenchLocal adapter and a CLI runner.
+This repository contains the benchmark source: scenario definitions, scoring logic, methodology, a BenchLocal adapter, and a CLI runner for local development. `main` tracks the maintained Bench Pack version for BenchLocal.
+
+If you need the older standalone web app implementation, use the [`legacy/web-app`](https://github.com/stevibe/ToolCall-15/tree/legacy/web-app) branch. That branch is preserved for compatibility, but BenchLocal is now the recommended way to run ToolCall-15.
+
+## Run With BenchLocal
+
+1. Download BenchLocal from the [latest BenchLocal release](https://github.com/stevibe/BenchLocal/releases/latest).
+2. Open BenchLocal and install ToolCall-15 from the official Bench Pack registry.
+3. Add one or more models, select ToolCall-15, and start a run.
 
 ## What It Measures
 
